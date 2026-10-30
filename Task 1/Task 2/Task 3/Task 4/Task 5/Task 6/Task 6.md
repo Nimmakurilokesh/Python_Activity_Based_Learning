@@ -17,6 +17,9 @@ Develop a Python program to calculate railway ticket fares for multiple passenge
 14. Stop the program.
  # Mermaid Flowchart
 ```mermaid
+
+
+flowchart TD
     A([Start]) --> B[/Enter number of passengers/]
     B --> C[/Enter name, age and distance/]
     C --> D[/Select travel class/]
@@ -34,7 +37,8 @@ Develop a Python program to calculate railway ticket fares for multiple passenge
     M --> N
     N --> O{More passengers?}
     O -- Yes --> C
-    O -- No --> P([Stop])
+    O -- No --> P([Stop]) 
+  
 ```
 # Python Source Code
 
