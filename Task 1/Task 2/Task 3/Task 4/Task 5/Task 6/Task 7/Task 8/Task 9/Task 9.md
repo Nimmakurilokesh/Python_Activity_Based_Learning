@@ -13,6 +13,7 @@ Develop a Python program to calculate a travel budget using multiple currencies.
 10. Stop.
 # Mermaid Flowchart
 ```mermaid
+  flowchart TD
     A([Start]) --> B[/Enter travel budget in INR/]
     B --> C[/Enter number of expenses/]
     C --> D[Set total expenses = 0]
@@ -27,6 +28,8 @@ Develop a Python program to calculate a travel budget using multiple currencies.
     J -- No --> L[Calculate extra amount]
     K --> M[/Display travel report/]
     L --> M
+    M --> N([Stop])
+
 ```
   # Python Source Code
     
