@@ -37,8 +37,8 @@ flowchart TD
     M --> N
     N --> O{More passengers?}
     O -- Yes --> C
-    O -- No --> P([Stop]) 
-  
+    O -- No --> P([Stop])
+
 ```
 # Python Source Code
 
