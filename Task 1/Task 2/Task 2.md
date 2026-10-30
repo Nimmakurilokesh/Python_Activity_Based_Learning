@@ -15,6 +15,7 @@ Develop a Python program to calculate household electricity bills based on multi
 12. Stop the program.
 # Mermaid Flowchart
 ```mermaid
+  flowchart TD
     A([Start]) --> B[/Enter number of months/]
     B --> C[/Enter electricity units/]
     C --> D{Units <= 100?}
