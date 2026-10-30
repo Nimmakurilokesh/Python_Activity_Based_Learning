@@ -14,25 +14,28 @@ Develop a Python program to calculate employee salary based on basic pay, allowa
 11. Stop the program.
  # Mermaid Flowchart
 ```mermaid
-   
+
+
 flowchart TD
-    A([Start]) --> B[/Enter data usage, validity and budget/]
-    B --> C[Define mobile recharge plans]
-    C --> D[Calculate excess data]
-    D --> E[Calculate extra charges]
-    E --> F[Calculate total plan cost]
-    F --> G{Validity sufficient and cost within budget?}
-    G -- Yes --> H[Store eligible plan]
-    G -- No --> I[Reject plan]
-    H --> J{More plans?}
-    I --> J
-    J -- Yes --> D
-    J -- No --> K{Any eligible plan?}
-    K -- Yes --> L[Select lowest-cost plan]
-    K -- No --> M[Display No Suitable Plan]
-    L --> N[/Display best plan and cost/]
-    M --> O([Stop])
-    N --> O
+    A([Start]) --> B[/Enter number of passengers/]
+    B --> C[/Enter name, age and distance/]
+    C --> D[/Select travel class/]
+    D --> E[Calculate basic fare]
+    E --> F{Age eligible for concession?}
+    F -- Yes --> G[Apply 50 percent concession]
+    F -- No --> H[No concession]
+    G --> I[Add reservation fee]
+    H --> I
+    I --> J{Ticket cancelled?}
+    J -- Yes --> K[Calculate cancellation penalty]
+    J -- No --> L[Calculate payable fare]
+    K --> M[Calculate refund amount]
+    L --> N[/Display fare details/]
+    M --> N
+    N --> O{More passengers?}
+    O -- Yes --> C
+    O -- No --> P([Stop])
+
 
 ```
 # Python Source Code
