@@ -15,6 +15,7 @@ Develop a Python program to calculate the financial details of a campus event. C
 12. Stop.
 # Mermaid Flowchart
   ```mermaid
+  flowchart TD
     A([Start]) --> B[/Enter event name and budget/]
     B --> C[/Enter tickets sold and ticket price/]
     C --> D[/Enter sponsorship and other income/]
