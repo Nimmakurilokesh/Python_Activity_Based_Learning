@@ -17,6 +17,9 @@ Develop a Python program to generate a retail shopping bill for multiple product
 11. Stop the program.
 # Mermaid Flowchart
   ```mermaid
+
+
+flowchart TD
     A([Start]) --> B[/Enter number of products/]
     B --> C[/Enter product name, category, price and quantity/]
     C --> D{Valid inputs?}
@@ -38,6 +41,8 @@ Develop a Python program to generate a retail shopping bill for multiple product
     P --> Q[/Display invoice/]
     E --> R([Stop])
     Q --> R
+
+
 ```
 # Python Source Code
 
