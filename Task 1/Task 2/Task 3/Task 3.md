@@ -19,6 +19,7 @@ Develop a Python program to calculate hospital bills based on consultation charg
 13. Stop the program.
     # Mermaid Flowchart
 ```mermaid
+
 flowchart TD
     A([Start]) --> B[/Enter number of patients/]
     B --> C[/Enter patient name and age/]
@@ -42,6 +43,8 @@ flowchart TD
     P --> R
     Q --> R
     R -- Yes --> C
+    R -- No --> S[/Display billing report/]
+    S --> T([Stop])
 ```
   # Python Source Code
     
