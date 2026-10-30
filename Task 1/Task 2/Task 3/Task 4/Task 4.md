@@ -15,6 +15,8 @@ Develop a Python program to calculate employee salary based on basic pay, allowa
     
 # Mermaid Flowchart
 ```mermaid
+  
+flowchart TD
     A([Start]) --> B[/Enter employee name and basic salary/]
     B --> C[/Enter allowances, overtime and incentives/]
     C --> D{Are inputs valid?}
