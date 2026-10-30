@@ -14,29 +14,21 @@ Develop a Python program to calculate the total manufacturing cost of a product 
 11. Stop.
  # Mermaid Flowchart
   ```mermaid
-   
+
+
 flowchart TD
-    A([Start]) --> B[/Enter number of products/]
-    B --> C[/Enter product name, category, price and quantity/]
-    C --> D{Valid inputs?}
-    D -- No --> E[Display Invalid Input]
-    D -- Yes --> F[Calculate product total]
-    F --> G[Add to subtotal]
-    G --> H{More products?}
-    H -- Yes --> C
-    H -- No --> I{Subtotal above 5000?}
-    I -- Yes --> J[Apply 10 percent discount]
-    I -- No --> K{Subtotal above 2000?}
-    K -- Yes --> L[Apply 5 percent discount]
-    K -- No --> M[No discount]
-    J --> N[Limit discount to 1000]
-    L --> N
-    M --> O[Calculate category tax]
-    N --> O
-    O --> P[Calculate final bill]
-    P --> Q[/Display invoice/]
-    E --> R([Stop])
-    Q --> R
+    A([Start]) --> B[/Input product name and quantity/]
+    B --> C[/Input material, labour, overhead and selling price/]
+    C --> D[Calculate cost per unit]
+    D --> E[Calculate total manufacturing cost]
+    E --> F[Calculate total sales]
+    F --> G[Calculate profit or loss]
+    G --> H{Profit greater than zero?}
+    H -- Yes --> I[Classify as Profitable]
+    H -- No --> J[Classify as Loss or No Profit]
+    I --> K[/Display results/]
+    J --> K
+    K --> L([Stop])    
 
   ```
 
