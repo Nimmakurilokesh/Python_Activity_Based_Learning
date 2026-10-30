@@ -14,19 +14,26 @@ Develop a Python program to calculate employee salary based on basic pay, allowa
 11. Stop the program.
  # Mermaid Flowchart
 ```mermaid
-    A([Start]) --> B[/Enter employee name and basic salary/]
-    B --> C[/Enter allowances, overtime and incentives/]
-    C --> D{Are inputs valid?}
-    D -- No --> E[Display Invalid Input]
-    D -- Yes --> F[Calculate overtime payment]
-    F --> G[Calculate gross salary]
-    G --> H[Calculate progressive deductions]
-    H --> I[Calculate PF deduction]
-    I --> J[Calculate total deductions]
-    J --> K[Calculate net salary]
-    K --> L[/Display salary statement/]
-    E --> M([Stop])
-    L --> M
+   
+flowchart TD
+    A([Start]) --> B[/Enter data usage, validity and budget/]
+    B --> C[Define mobile recharge plans]
+    C --> D[Calculate excess data]
+    D --> E[Calculate extra charges]
+    E --> F[Calculate total plan cost]
+    F --> G{Validity sufficient and cost within budget?}
+    G -- Yes --> H[Store eligible plan]
+    G -- No --> I[Reject plan]
+    H --> J{More plans?}
+    I --> J
+    J -- Yes --> D
+    J -- No --> K{Any eligible plan?}
+    K -- Yes --> L[Select lowest-cost plan]
+    K -- No --> M[Display No Suitable Plan]
+    L --> N[/Display best plan and cost/]
+    M --> O([Stop])
+    N --> O
+
 ```
 # Python Source Code
 
